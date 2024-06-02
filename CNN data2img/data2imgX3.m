@@ -84,7 +84,7 @@ for ff = 1:totalExpFiles
         k = 1;
         %upside down images will be created
         for j = gap+1:gap+px:imgSz(2)-gap 
-           M(px:barI(k),j:j+px-1)=1;
+           M(px+1:barI(k)+px,j:j+px-1)=1;
            k = k+1;
            if(k>d)
                 break;
